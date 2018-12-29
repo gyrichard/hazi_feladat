@@ -3,9 +3,9 @@ session_start();
 
 
 $input = !empty($_POST["input"]) ? $_POST["input"] : "";
-$task = !empty($_POST["task"]) ? $_POST["task"] : "1";
+$part = !empty($_POST["part"]) ? $_POST["part"] : "1";
 
-if ($task == 1) {
+if ($part == 1) {
     $input = str_split($input);
 
     $sum = 0;
@@ -13,7 +13,7 @@ if ($task == 1) {
         $char == '(' ? $sum++ : $sum--;
     }
     $_SESSION["eredmeny"] = $sum;
-} elseif ($task == 2) {
+} elseif ($part == 2) {
     $input = str_split($input);
 
     $sum = 0;

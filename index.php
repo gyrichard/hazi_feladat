@@ -32,14 +32,14 @@ session_start();
                 <form method="post" action="feladat<?php print $_GET["feladat"] ?>.php">
                     <?php if ($_GET["feladat"] == '1') { ?>
                         <div class="form-check-inline">
-                            <label class="form-check-label pr-2 pl-2" for="task1">
-                                Task one
+                            <label class="form-check-label pr-2 pl-2" for="part1">
+                                part one
                             </label>
-                            <input class="form-check-input" type="radio" name="task" id="task1" value="1" checked>
-                            <label class="form-check-label pr-2 pl-2" for="task2">
-                                Task two
+                            <input class="form-check-input" type="radio" name="part" id="part1" value="1" checked>
+                            <label class="form-check-label pr-2 pl-2" for="part2">
+                                part two
                             </label>
-                            <input class="form-check-input" type="radio" name="task" id="task2" value="2">
+                            <input class="form-check-input" type="radio" name="part" id="part2" value="2">
                         </div>
                     <?php } ?>
                     <div class="form-group mt-4">
