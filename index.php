@@ -30,7 +30,7 @@ session_start();
             <h1 class="mt-4">Feladat <?php print $_GET["feladat"] ?> </h1>
             <div class="col-md-12">
                 <form method="post" action="feladat<?php print $_GET["feladat"] ?>.php">
-                    <?php if ($_GET["feladat"] == '1') { ?>
+                    <?php if ($_GET["feladat"] == '1' or $_GET["feladat"] == '2') { ?>
                         <div class="form-check-inline">
                             <label class="form-check-label pr-2 pl-2" for="part1">
                                 part one
