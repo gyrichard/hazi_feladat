@@ -22,6 +22,7 @@ session_start();
             <a class="nav-item nav-link" href="index.php?feladat=1">Feladat 1</a>
             <a class="nav-item nav-link" href="index.php?feladat=2">Feladat 2</a>
             <a class="nav-item nav-link" href="index.php?feladat=3">Feladat 3</a>
+            <a class="nav-item nav-link" href="index.php?feladat=4">Feladat 4</a>
         </div>
     </div>
 </nav>
@@ -31,7 +32,7 @@ session_start();
             <h1 class="mt-4">Feladat <?php print $_GET["feladat"] ?> </h1>
             <div class="col-md-12">
                 <form method="post" action="feladat<?php print $_GET["feladat"] ?>.php">
-                    <?php if ($_GET["feladat"] < 4) { ?>
+                    <?php if ($_GET["feladat"] < 5) { ?>
                         <div class="form-check-inline">
                             <label class="form-check-label pr-2 pl-2" for="part1">
                                 part one
